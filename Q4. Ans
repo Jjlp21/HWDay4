@@ -1,0 +1,975 @@
+TASK - 1
+=========
+
+
+1.Declare four variables without assigning values and print them in console:-
+
+let a,b,c,d;
+console.log(a,b,c,d)
+//output: undefined undefined undefined undefined
+
+---
+
+2.How to get value of the variable myvar as output:-
+
+var myvar= 1;
+console.log(myvar);
+//output:1
+// remove double quotes inside console
+// double quotes are use to display strings in console
+
+---
+
+3.Declare variables to store your first name, last name, marital status, country and age in multiple lines:-
+
+const firstName = "Joseph";
+const lastName = "Paul";
+let maritalStatus = "Single";
+let country = "India";
+let age = "25";
+// declared in seperate lines
+
+---
+
+4. Declare variables to store your first name, last name, marital status, country and age in a single line:-
+
+let firstName = "Joseph",lastName = "Paul" , maritalStatus = "Single",country = "India",age = "25";
+// declared variable in single line
+
+---
+
+5. Declare variables and assign string, boolean, undefined and null data types:-
+
+let a="string",b=true,c=null,d=undefined;
+//a=>string,b=>boolean,c=>null(object),d=>undefined
+
+---
+
+6.Convert the string to integer:-
+
+let string1 = "123456";
+string = parseInt(string);
+
+let string2 = "654321";
+string = Number(string);
+
+let string3 = "987654";
+string = +(string);
+
+---
+
+7.Write 6 statement which provide truthy & falsey values.:-
+
+
+//Truthy
+
+if (1){console.log(true)}
+else{console.log(false)}
+
+if (true){console.log(true)}
+else{console.log(false)}
+
+if ([]){console.log(true)}
+else{console.log(false)}
+
+if ({}){console.log(true)}
+else{console.log(false)}
+
+
+if (36){console.log(true)}
+else{console.log(false)}
+
+if ("false"){console.log(true)}
+else{console.log(false)}
+
+
+//Falsey
+
+if (null){console.log(true)}
+else{console.log(false)}
+
+if (0n){console.log(true)}
+else{console.log(false)}
+
+if (0){console.log(true)}
+else{console.log(false)}
+
+if (NaN){console.log(true)}
+else{console.log(false)}
+
+if (undefined){console.log(true)}
+else{console.log(false)}
+
+if (false){console.log(true)}
+else{console.log(false)}
+
+
+---
+
+
+
+
+TASK - 2
+=========
+
+
+1.Square of a number
+
+let n=4
+console.log(Math.sqrt(n))
+
+//output: 2
+
+2.Swapping 2 numbers
+
+let a = 5, b = 6;
+[a, b] = [b, a];
+console.log(a,b);
+
+//output: 6 5
+
+3.Addition of 3 numbers
+
+let a=5,b=6,c=6;
+let sum = a+b+c;
+console.log(sum)
+
+//output: 17
+
+4.Celsius to Fahrenheit conversion
+
+let C = 25;
+let F = (C * 9/5) + 32
+console.log(`${C} Degree Celsius is = ${F} Degree Farenheit`)
+
+//output: 25 Degree Celsius is = 77 Degree Farenheit
+
+5.Meter to miles
+
+let m=3000
+let M=m/1609.344
+console.log(`${m} meter= ${M} miles`)
+
+//output: 3000 meter= 1.8641135767120018 miles
+
+6.Pounds to kg
+
+let P=1
+let kg=P/2.2046
+console.log(`${P} Ib = ${kg} KG`)
+
+//output: 1 Ib = 0.4535970244035199 KG
+
+7.Calculate Batting Average
+
+let runsScored = 522, timesOut = 27 ;
+let battingAvg = runsScored/timesOut;
+console.log(battingAvg);
+
+// output: 19.333333333333332
+
+
+8.Calculate five test scores and print their average
+
+let test1=75
+let test2=85
+let test3=90
+let test4=95
+let test5=100
+
+console.log(`Final result = ${(test1+test2+test3+test4+test5)/5}/100`)
+
+// output: Final result = 89/100
+
+9.Power of any number x ^ y.
+
+let x = 2;
+let y = 3;
+
+console.log(`x to the power of y = ${x**y}`)
+
+// output: x to the power of y = 8
+
+10.Calculate Simple Interest
+
+let P = 10000 , R = 10/100, T = 20 , SI = P*R*T;
+
+console.log(SI);
+
+//output: 20000
+
+11.Calculate area of an equilateral triangle
+
+let side = 2;
+console.log("Area is = ", Math.sqrt(3)/4*side**2);
+
+// output: Area is =  1.7320508075688772
+
+12.Area Of Isosceles Triangle
+
+let base=4, height=5;
+let Area = base*height/2;
+console.log(Area);
+
+//output 10
+
+13.Volume Of Sphere
+
+let radius = 2;
+let volume = 4/3*Math.PI*radius**3;
+console.log(volume);
+
+//output 33.510321638291124
+
+14.Volume Of Prism
+
+let baseArea = 100, height = 20;
+console.log("prism volume is = ",baseArea*height);
+
+//output: prism volume is =  2000
+
+15.Find area of a triangle.
+
+let base=5, height=4;
+let Area = base*height/2;
+console.log(Area);
+
+//output 10
+
+16.Give the Actual cost and Sold cost, Calculate Discount Of Product
+
+let actualPrice = 1000, soldPrice = 700;
+let DiscountedPrice = actualPrice - soldPrice;
+console.log(`${DiscountedPrice}Rs Discount`)
+
+// output: 300Rs Discount
+
+17.Given their radius of a circle and find its diameter, circumference and area.
+
+let radius = 10;
+let diameter = radius*2;
+let circumference = Math.PI*diameter;
+let area = Math.PI*radius**2;
+
+console.log(` circle of radius ${radius} has a diameter of ${diameter}, circumference of ${circumference} and area of ${area}`);
+
+// output:  circle of radius 10 has a diameter of 20, circumference of 62.83185307179586 and area of 314.1592653589793
+
+18.Given two numbers and perform all arithmetic operations.
+
+let num1 = 50;
+let num2 = 2;
+
+console.log(`num1+num2=${num1+num2}`);
+console.log(`num1-num2=${num1-num2}`);
+console.log(`num1*num2=${num1*num2}`);
+console.log(`num1**num2=${num1**num2}`);
+console.log(`num1/num2=${num1/num2}`);
+console.log(`num1%num2=${num1%num2}`);
+console.log(`++num1=${++num1}`);
+console.log(`--num2=${--num2}`);
+
+/*output: 
+num1+num2=52
+num1-num2=48
+num1*num2=100
+num1**num2=2500
+num1/num2=25
+num1%num2=0
+ ++num1=51
+ --num2=1
+
+19.Display the asterisk pattern as shown below(No loop needed):
+
+console.log("*****");
+console.log("*****");
+console.log("*****");
+console.log("*****");
+console.log("*****");
+
+ 
+// output:   *****
+//           *****
+//           *****
+//           *****
+//           *****
+
+
+20.Calculate electricity bill?
+For example, a consumer consumes 100 watts per hour daily for one month. Calculate the total energy bill of that consumer if per unit rate is 10?
+
+let wattsPerHour = 100 , kw=wattsPerHour/1000
+let unitRate = 10;
+let wattsPerMonth = kw*24*30;
+let bill = Math.round(wattsPerMonth*unitRate);
+
+console.log(`monthly electricity bill = ${bill}`)
+
+// output: monthly electricity bill = 720
+
+21.Program To Calculate CGPA
+
+let sA1=8, sA2=9, sA3=10, sA4=8, sA5=10;
+let CGPA = (sA1 + sA2 + sA3 + sA4 + sA5)/5;
+console.log(` CGPA of all five semesters is = ${CGPA}`);
+
+// output:  CGPA of all five semesters is = 9
+
+==============================================
+
+
+Task 3
+========
+
+1.Write a loop that makes seven calls to console.log to output the following triangle:-
+
+ let a=["#","#","#","#","#","#","#"]
+let s=""
+for(i=0;i<7;i++){
+s=s+a[i];
+console.log(s)
+}
+
+//output : #
+//         ##
+//         ###
+//         ####
+//         #####
+//         ######
+//         #######
+
+2.Iterate through the string array and print it contents
+
+var strArray= ["<option>Jazz</option>",
+,"<option>Blues</option>",
+,"<option>New Age</option>",
+,"<option>Classical</option>",
+,"<option>Opera</option>"]
+
+for(i=0;i<strArray.length;i++){
+
+    console.log(strArray[i]);
+}
+
+// two ","s b/w each string will cause undefined elements to come between strings on console.
+
+/* output:
+   <option>Jazz</option>
+   undefined
+   <option>Blues</option>
+   undefined
+   <option>New Age</option>
+   undefined
+   <option>Classical</option>
+   undefined
+   <option>Opera</option> */
+
+   // corrected array : -
+
+   var strArray= 
+  ["<option>Jazz</option>",
+   "<option>Blues</option>",
+   "<option>New Age</option>",
+   "<option>Classical</option>",
+   "<option>Opera</option>"]
+
+for(i=0;i<strArray.length;i++){
+
+    console.log(strArray[i]);}
+
+    /* output:
+
+     <option>Opera</option>
+     <option>Jazz</option>
+     <option>Blues</option>
+     <option>New Age</option>
+     <option>Classical</option>
+     <option>Opera</option>*/
+
+3.
+
+Question
+
+Arrays:
+var myarray=[11,22,33,44,55]
+write a code to count the elements in the array . Don’t use length property
+Declare an empty array;
+
+Answer:
+
+var myarray=[11,22,33,44,55];
+
+  var i = 0;
+  while(myarray[i]!==undefined){
+    i++;
+  }
+  console.log(i);
+
+  //output: 5
+
+4. 
+
+Question
+
+Create an array called foods holds the names of your top 20 favorite foods, starting with the best food.
+let foods=[]
+
+Ans.
+
+let foods=["Dum-Biriyani","Speghetti","Burger","Chicken Tikka","Grilled Chicken","KFC","Chicking","Mont Blanc","Coconut souffle","Pizza","Chopsuey","Egg Fried Rice","Prawns Fried rice","Ghee Roast","Ratatouille","Idli","Noolappam","Uthappam","Porotta-beef","Prawn Cocktail"]
+
+5.
+
+Quetion
+
+Foods variable holds the names of your top 20 favorite foods, starting with the best food. How can you find your fifth favorite food?
+let foods=[]
+Find the length of your foods array
+
+Ans.
+
+// Foods variable holds the names of your top 20 favorite foods, starting with the best food. How can you find your fifth favorite food?
+
+// Find the length of your foods array
+
+let foods=["Dum-Biriyani","Speghetti","Burger","Chicken Tikka","Grilled Chicken","KFC","Chicking","Mont Blanc","Coconut souffle","Pizza","Chopsuey","Egg Fried Rice","Prawns Fried rice","Ghee Roast","Ratatouille","Idli","Noolappam","Uthappam","Porotta-beef","Prawn Cocktail"]
+
+// the fifth index(foods[4]) will have my 5th fav food
+console.log(`5th fav food is ${foods[5]}`);
+console.log(`length is ${foods.length}`);
+
+// output: 5th fav food is KFC
+//         length is 20
+
+6.
+
+Question
+
+Starting from the existing friends variable below, change the element that is currently “Mari” to “Munnabai”.
+let friends = [
+“Mari”,
+“MaryJane”,
+“CaptianAmerica”,
+“Munnabai”,
+“Jeff”,
+“AAK chandran”
+];
+function dataHandling(input){
+for (var i = 0; i < input.length; i++) {
+
+}
+}
+dataHandling(friends);
+
+Ans.
+
+let friends = ["Mari",
+"MaryJane",
+"CaptianAmerica",
+"Munnabai",
+"Jeff",
+"AAK chandran"
+];
+function dataHandling(input){
+for (var i = 0; i < input.length; i++) {
+if(input[i]=="Mari"){input[i]="Munnabai"}
+}console.log(friends);
+}
+
+dataHandling(friends);
+
+//output: ['Munnabai', 'MaryJane', 'CaptianAmerica', 'Munnabai', 'Jeff', 'AAK chandran']
+
+7.
+
+Question
+
+Starting from the friends variable below, Loop and Print the names till you meet CaptianAmerica.
+const friends = [
+“Mari”,
+“MaryJane”,
+“CaptianAmerica”,
+“Munnabai”,
+“Jeff”,
+“AAK chandran”
+];
+function dataHandling(input){
+for (var i = 0; i < input.length; i++) {
+
+}
+}
+dataHandling(friends);
+
+Ans. 
+
+const friends = [
+    "Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran"
+    ];
+
+
+    function dataHandling(input){
+           let n;
+           for (var i = 0; i < input.length; i++) 
+           {
+             if(input[i]=="CaptianAmerica"){n=i}
+           }
+
+           for(var i = 0; i <= n; i++) 
+           {
+              console.log(input[i]);
+           }
+    }
+
+    dataHandling(friends);
+
+    // this code includes printing CaptianAmerica avoid "i=n" in second for loop to exclude CaptianAmerica
+
+    // output: Mari
+    //         MaryJane
+    //         CaptianAmerica
+
+8.
+
+Question
+
+Find the person is ur friend or not.
+const friends = [
+“Mari”,
+“MaryJane”,
+“CaptianAmerica”,
+“Munnabai”,
+“Jeff”,
+“AAK chandran”
+];
+function dataHandling(input, name){
+for (var i = 0; i < input.length; i++) {
+
+}
+}
+let found = dataHandling(friends,”Jeff”);
+console.log(found);
+
+Ans.
+
+const friends = [
+    "Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran"
+    ];
+
+
+    function dataHandling(input,name){
+       for (var i = 0; i < input.length; i++) 
+        {
+            if(input[i] == name)
+               return ` ${name} is my friend`;
+            var result = `${name} is not my friend`
+        }
+
+       return result;
+        
+    }
+
+    let found = dataHandling(friends,"Jeff");
+    console.log(found);
+
+//output:  Jeff is my friend
+
+9.
+
+Question
+
+We have two lists of friends below. Use array methods to combine them into one alphabetically-sorted list.
+var friends1 = [
+“Mari”,
+“MaryJane”,
+“CaptianAmerica”,
+“Munnabai”,
+“Jeff”,
+“AAK chandran”
+];
+var friends2 = [
+“Gabbar”,
+“Rajinikanth”,
+“Mass”,
+“Spiderman”,
+“Jeff”,
+“ET”
+];
+function dataHandling(input){
+//Your code goes here
+}
+dataHandling(friends);
+
+Ans.
+
+var friends1 = [
+    "Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran" ];
+
+    var friends2 = [
+    "Gabbar",
+    "Rajinikanth",
+    "Mass",
+    "Spiderman",
+    "Jeff",
+    "ET"];
+
+
+    function dataHandling(input1,input2){
+
+
+        let totalFriends=input1.concat(input2);
+
+    console.log(totalFriends.sort());
+    }
+    dataHandling(friends1,friends2);
+
+    //output: (12) ['AAK chandran', 'CaptianAmerica', 'ET', 'Gabbar', 'Jeff', 'Jeff', 'Mari', 'MaryJane', 'Mass', 'Munnabai', 'Rajinikanth', 'Spiderman']
+
+=======================================================================================================================================================================
+
+1. Get the first item, the middle item and the last item of the array.
+
+Ans. 
+
+
+var friends = [
+    "Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran" ];
+
+let firstItem = friends[0];
+let lastItem = friends[friends.length - 1];
+
+// check if even number or odd number of elements in array first, since here even there will be two middle elements in array
+
+let middle1=friends[(friends.length/2)-1]
+let middle2=friends[(friends.length/2)]
+let middle=middle1+" & "+middle2;
+console.log(`first item is ${firstItem} last item is ${lastItem} middle items are ${middle}`);
+
+// output: first item is Mari last item is AAK chandran middle items are CaptianAmerica & Munnabai
+
+2. Add your name to the end of the friends array, and add another name to beginning.
+
+Ans.
+
+var friends = [
+    "Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran" ];
+
+friends.push("Joseph");
+friends.unshift("Paul");
+
+console.log(friends);
+
+//output: ['Paul', 'Mari', 'MaryJane', 'CaptianAmerica', 'Munnabai', 'Jeff', 'AAK chandran', 'Joseph']
+
+3. Add Mr or Ms to the names in the friends array.
+
+Ans. var friends = [
+    "Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran" ];
+
+
+let Friends = friends.map(x=>"Ms. "+x);
+
+console.log(Friends)
+
+// output: (6) ['Ms. Mari', 'Ms. MaryJane', 'Ms. CaptianAmerica', 'Ms. Munnabai', 'Ms. Jeff', 'Ms. AAK chandran']
+
+4. Concat all the names the friends array and return as comma “,” seperated string.
+
+Ans.var friends = [
+    "Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran" ];
+    
+    let s ="";
+    for(i=0;i<friends.length;i++){
+        s=s+friends[i]+",";
+    }
+
+    // slice to remove last ","
+    s = s.slice(0, -1)
+    console.log(s);
+
+   // output: Mari,MaryJane,CaptianAmerica,Munnabai,Jeff,AAK chandran,
+
+5. Find the friends names who has letter ‘a’ and return the list.
+
+Ans. var friends = [
+    "Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran" ];
+    
+    var Friends = friends.filter(friend=>friend.includes('a'));
+    console.log(Friends)
+
+    // output: (5) ['Mari', 'MaryJane', 'CaptianAmerica', 'Munnabai', 'AAK chandran']
+
+6. Find the avg length of all the friends names. Get the individual length of the names and do the avg.
+
+Ans. var friends = [
+    "Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran" ];
+    
+    var total=0;
+for(i=0;i<friends.length;i++) {
+    total+=friends[i].length;
+}   
+
+let avg = total/friends.length;
+console.log(avg);
+
+// output: 8.333333333333334
+
+7. Find the names and return the list starting with letter M.
+
+
+Ans. var friends = [
+    "Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran" ];
+    
+ let friendsWithM= friends.filter(name=>name.startsWith("M"));
+ console.log(friendsWithM);
+
+// output:(3) ['Mari', 'MaryJane', 'Munnabai']
+
+8. Find the name with max characters and return the name.
+
+Ans.
+var friends = [
+    "Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran" ];
+    
+ let Friends =friends.map(x=>x.length);
+ let longest = Friends.reduce((x,y)=>x>y?x:y)
+ 
+ let name = friends.filter((x,y)=>{
+     if(x.length==longest) return y;
+     else return 0;
+     })
+
+name.forEach(x=>console.log(x));
+
+// output: CaptianAmerica
+ 
+
+9. Find the name with min characters and return the name.
+
+Ans.
+
+
+var friends = [
+    "Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran" ];
+    
+ let Friends =friends.map(x=>x.length);
+ let shortest = Friends.reduce((x,y)=>x>y?y:x)
+ 
+
+ for(i=0;i<friends.length;i++) {
+    if (friends[i].length==shortest)
+    console.log(friends[i])
+}
+ //output : Jeff
+//          Mari
+
+=====================================================================
+
+1. 
+
+Find the average in the array below.
+Make sure you add only the numbers and do avg.
+const friendsInfo = [6, 12, ‘Mari’, 1, true, ‘Munnabai’, ‘200’, ‘CaptianAmerica’, 8, 10];
+
+Ans. 
+
+
+// Find the average in the array below.
+// Make sure you add only the numbers and do avg.
+// const friendsInfo = [6, 12, ‘Mari’, 1, true, ‘Munnabai’, ‘200’, ‘CaptianAmerica’, 8, 10];
+
+const friendsInfo = [6, 12, "Mari", 1, true, "Munnabai", "200", "CaptianAmerica", 8, 10];
+
+let b = friendsInfo.filter(Number.isInteger);
+let a = (b.reduce((x,y)=>x+y))/b.length;
+// avg of added numbers
+console.log(a);
+
+// output : 7.4
+
+2.
+
+Print the contents of the input variable
+
+
+Ans.
+
+ var input = [
+["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"],
+["0002", "Dika Sembiring", "Medan", "10/10/1992", "Bermain Gitar"],
+["0003", "Winona", "Ambon", "25/12/1965", "Memasak"],
+["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
+]
+function dataHandling(input){
+for (var i = 0; i < input.length; i++) {
+
+console.log(input[i])}
+}
+dataHandling(input);
+
+// output :
+
+//  (5) ['0001', 'Roman Alamsyah', 'Bandar Lampung', '21/05/1989', 'Membaca']
+//  (5) ['0002', 'Dika Sembiring', 'Medan', '10/10/1992', 'Bermain Gitar']
+//  (5) ['0003', 'Winona', 'Ambon', '25/12/1965', 'Memasak']
+//  (5) ['0004', 'Bintang Senjaya', 'Martapura', '6/4/1970', 'Berkebun']
+
+3.
+
+Objects:
+
+What the output?
+
+myobject = {1:one,”11":1,”name”:”arun”}
+console.log(myobject.11); 
+console.log(myobject.name);
+
+Ans. Syntax error 
+
+            right method: console.log(myobject[11]);
+                          console.log(myobject[name]);
+
+the question code is completely wrong even the object.
+
+4.
+
+Add a new key value pair to myobject
+key : ten
+value : ten
+
+myobject = {1:one,”11":1,”name”:”arun”}
+//your code goes here
+console.log(myobject);
+{"1":"one","11":1,"name":"arun","ten":"ten"} // Quotes might not get displayed that fine.
+
+Ans. 
+
+myobject = {1:"one","11":1,"name":"arun"}
+//your code goes here
+myobject["ten"]="ten";
+
+console.log(myobject);
+
+// output: {1: 'one', 11: 1, name: 'arun', ten: 'ten'}
+
+
+
+5.
+
+Write out an object literal to represent the data below.
+Guvi, Geek, 6, IIT-M RP,Chennai.
+
+Ans. 
+
+
+let FSD = {Institution: "Guvi", Category: "Geek", ID:6,Address:["IIT-M RP","Chennai"]}
+
+6.
+
+How would you represent the following data using a combination of object literals and arrays? (You can describe a strategy without typing or writing out the whole thing.)
+Guvi, Geek, 6, IIT-M RP,Chennai.
+Amazon, Inc, 31, SP Infocity, Chennai.
+Google, Alphabet, 34 Amphitheater Parkway, MountainView.
+Tesla, Inc , 32, 333 Santana Row,San Jose.
+
+Ans.
+
+I can put the adresses in an array inside of objects where the word "Address" can be the "Key" and the "array" holding the given adress information the "value" of the "key" : "value" pairs
+
+======================================================================
+
+
+GUVI: Zen Class — Part 2 : 
+
+Find the culprits and nail them — debugging javascript loops
+
+
+1
+
+Write a code to print the numbers in the array
+Output: 1234567891011
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = “”;
+ 
+for (var i = 1; i < 11; i--) {
+ new_string += numsArr[i] 
+}
+console.log(new_string);
+
+Ans. for loop "i" sould start with "0" not "1" , for loop should end with "i++" to iterate forward along the elements of array.
+     like this : for (var i = 0; i < 11; ++i)
+
+2
+
+Write a code to print the numbers in the array
+Output: 1,2,3,4,5,6,7,8,9,10,11
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = “”;
+ 
+for (var i = 1; i < 11; i++) {
+ new_string += numsArr[i] + , 
+}
+console.log(new_string);
+
+
+Ans. 
+
